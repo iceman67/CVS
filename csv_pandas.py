@@ -2,7 +2,7 @@ import csv
 import pandas as pd 
 
 ## open the file containing the data
-data = pd.read_csv("data/input_data/artificial_roads_by_region.csv")
+data = pd.read_csv("artificial_roads_by_region.csv")
 #print(data.head())
 
 
