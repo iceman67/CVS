@@ -1,7 +1,7 @@
 import csv
 
 ## open the file containing the data
-fin = open("data/input_data/artificial_roads_by_region.csv","r",newline="")
+fin = open("artificial_roads_by_region.csv","r",newline="")
 
 ## create a file reader using the file object, 'fin'
 reader = csv.DictReader(fin)
