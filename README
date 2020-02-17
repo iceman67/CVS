@@ -1,0 +1,46 @@
+1.	CSV 이란?
+  - 구조화된 텍스트 파일
+  - comma seperate value의 약어 이다.
+  - 값의 구분이 탭"\t", 콤마",", 수직바"|"와같은 문자를 구분자로 사용한다
+
+ 
+2.	구조화된 텍스트 파일의 종류 
+  1) JSON 파일
+  2) XML 파일
+  3) HTML 파일
+  4) YAML
+  5) CSV
+ 
+
+3. CSV 특징
+  1) 콤마로 구분된다. 
+  2) 줄바꿈 문자가 운영체제 마다 다르다.
+    - Linux/Max : \n
+    - windows : \r\n
+  3) 컬럼 이름이 첫번째 라인에 온다.
+
+4. python 에서 CSV 다루는 방법
+  1) CSV 를 list로 변환하여 다룬다.
+  2) CSV 를 Dictionary로 변환하여 다룬다.
+  3) pandas  패키지 사용 dataframe 으로 다룬다.
+
+5. 필요 모듈
+  - CSV  
+  - pandas 
+
+ 6. CSV 리스트로 읽어 들이기 
+  1) 읽기 함수
+    - csv.reader()
+    - 한번에 읽지 않고 한줄씩 읽어 들임
+    - 대용량 파일을 처리 할때 좋음
+    - 아래와 같은 구조로 읽어짐
+
+ 7. CSV Dictionary로 읽어 들이기 
+  1) 읽기 함수
+    - csv.DictReader()
+   2) 작성 코드 
+    fin = open("artificial_roads_by_region.csv","r",newline="")
+    reader = csv.DictReader(fin)
+    
+ 8.  Pandas 의 데이터프레임으로 읽어들이기 
+   data = pd.read_csv("artificial_roads_by_region.csv")
