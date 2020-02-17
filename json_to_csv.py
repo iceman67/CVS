@@ -2,7 +2,7 @@ import csv
 import json
 
 ## read in the input json data
-fin = open("data/input_data/scf_extract.json","r",newline="")
+fin = open("scf_extract.json","r",newline="")
 json_data = json.load(fin)
 fin.close()
 
