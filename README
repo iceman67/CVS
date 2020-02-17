@@ -42,3 +42,7 @@
     
  8.  Pandas 의 데이터프레임으로 읽어들이기 
    data = pd.read_csv("artificial_roads_by_region.csv")
+   
+   
+참고
+- https://www.geeksforgeeks.org/python-pandas-dataframe-reset_index/
